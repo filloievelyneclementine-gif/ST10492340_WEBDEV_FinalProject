@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvet Gleam - Checkout</title>
+ <link rel="stylesheet" href="./css/styles.css">
+ <!-- Dans le <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body >
+  
+  <header>
+  
+    <div class="logo">
+   
+
+    <img src="images/velvet_gleam.jpg" alt="Velvet Gleam Logo" width="80">
+  </div>
+
+
+   <nav>
+     <a href="Homepage.html">🏠 Home</a>
+  <a href="Product.html">🛍 Products</a>
+  <a href="About.html">ℹ️ About</a>
+  <a href="Enquiry.html">📩 Enquiry</a>
+  <a href="Contact.html">📞 Contact</a>
+  <a href="basket.html">🛒(<span id="cart-count">0</span>)</a>
+  <a href="Checkout.html" class="active">💳 Checkout</a>
+    </nav>
+
+</header>
+
+  <main>
+    <h1>💳 Checkout</h1>
+    <section class="checkout-container">
+      <div class="order-summary">
+        <h2>🛍 Order Summary</h2>
+        <ul id="order-items"></ul>
+        <div id="basket-container"></div>
+        <p class="total">Total: <strong> $<span id="basket-total">0</span></strong></p>
+      </div>
+
+      <div class="payment-form">
+        <h2>💰 Payment Details</h2>
+        <form id="payment-form">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" required><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" required><br>
+
+          <label for="address">Address:</label>
+          <input type="text" id="address" required><br>
+
+          <label for="card">Card Number:</label>
+          <input type="text" id="card" maxlength="16" placeholder="1234 5678 9012 3456" required><br>
+
+          <label for="expiry">Expiry Date:</label>
+          <input type="month" id="expiry" required><br>
+
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" maxlength="3" required><br>
+
+          <button type="submit">✅ Confirm Purchase</button><br>
+
+    <section class="payment-options">
+  <button id="pay-card">💳 Pay with Card</button>
+  <button id="pay-paypal">💰 Pay with PayPal</button>
+  <button id="pay-cash">💵 Cash on Delivery</button>
+</section>
+        </form>
+      </div>
+    </section>
+
+
+    <div id="confirmation-message" class="hidden">
+      <h2>🎉 Thank you for your purchase!</h2>
+      <p>Your order has been successfully placed.</p>
+    </div>
+  </main>
+<!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Velvet Gleam – Crafting Elegance, Empowering Stories. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/its_velvet_gleam?utm_source=qr&igsh=bmV0dzh5c3l6Y2hp"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/16d2HE6nZh/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.tiktok.com/@purple_nely?_r=1&_t=ZS-91XTNiiCC2y"><i class="fab fa-tiktok"></i></a>
+        <a href="Check out my Pinterest profile! https://pin.it/7CiTH2vAM"><i class="fab fa-pinterest"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/script.js"></script>
+<script>
+  loadCheckout(); // Charge les articles et le total depuis le panier
+</script>
+
+ 
+</body>
+</html>

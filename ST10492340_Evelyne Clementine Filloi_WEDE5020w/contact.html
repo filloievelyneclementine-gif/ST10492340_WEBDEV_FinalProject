@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvet Gleam - Contact</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- Dans le <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="js/script.js"></script>
+
+</head>
+<body>
+
+  
+   
+  <header>
+  
+    <div class="logo">
+   
+
+    <img src="images/velvet_gleam.jpg" alt="Velvet Gleam Logo" width="80">
+  </div>
+
+
+   <nav>
+     <a href="Homepage.html">🏠 Home</a>
+  <a href="Product.html">🛍 Products</a>
+  <a href="About.html">ℹ️ About</a>
+  <a href="Enquiry.html">📩 Enquiry</a>
+  <a href="Contact.html">📞 Contact</a>
+    </nav>
+
+</header>
+
+  <!-- Hero Section -->
+  <section class="contact-hero">
+    <div class="hero-content">
+      <h1>Get in Touch with Velvet Gleam</h1>
+      <p>We're here to help you shine brighter! Reach out to us for any questions, support, or just to say hello.</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <i class="fas fa-clock"></i>
+          <span>24/7 Support</span>
+        </div>
+        <div class="stat">
+          <i class="fas fa-reply"></i>
+          <span>Fast Response</span>
+        </div>
+        <div class="stat">
+          <i class="fas fa-heart"></i>
+          <span>Customer Care</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Contact Methods -->
+<section class="contact-methods">
+  <div class="container">
+    <h2>Choose Your Preferred Way to Connect</h2>
+    <div class="methods-grid">
+      <!-- Email -->
+      <div class="method-card">
+        <div class="method-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <h3>Email Us</h3>
+        <p>Send us a detailed message</p>
+        <a href="mailto:velvetgleam2025@gmail.com" class="method-link">
+          <img src="images/Gmail logo.jpg" alt="Email" class="contact-logo" onerror="this.style.display='none'">
+          <i class="fas fa-envelope"></i>
+            Email Us 
+        </a>
+        <small>Response within 2 hours</small>
+      </div>
+
+      <!-- WhatsApp -->
+      <div class="method-card">
+        <div class="method-icon">
+          <i class="fab fa-whatsapp"></i>
+        </div>
+        <h3>WhatsApp</h3>
+        <p>Chat with us instantly</p>
+        <a href="https://api.whatsapp.com/send/?phone=%2B27602057704&text&type=phone_number&app_absent=0" class="method-link" target="_blank">
+          <img src="images/Whatsapp.jpg" alt="WhatsApp" class="contact-logo" onerror="this.style.display='none'">
+          <i class="fab fa-whatsapp"></i>
+          Start Chat
+        </a>
+        <small>Available 24/7</small>
+      </div>
+
+      <!-- Location -->
+      <div class="method-card">
+        <div class="method-icon">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <h3>Visit Us</h3>
+        <p>Come see our collection</p>
+        <div class="method-link">
+          <img src="images/location logo.jpg" alt="Location" class="contact-logo" onerror="this.style.display='none'">
+          <i class="fas fa-store"></i>
+          Gahanna, Ohio
+        </div>
+        <small>1352 Underwood Farms Blvd</small>
+      </div>
+
+      <!-- Telephone -->
+      <div class="method-card">
+        <div class="method-icon">
+          <i class="fas fa-phone-alt"></i>
+        </div>
+        <h3>Call Us</h3>
+        <p>Speak directly with our team</p>
+        <a href="tel:+27602057704" class="method-link">
+          <img src="images/telephone logo.jpg" alt="Telephone" class="contact-logo" onerror="this.style.display='none'">
+          <i class="fas fa-phone"></i>
+          +27 60 205 7704
+        </a>
+        <small>Mon-Fri: 9AM-6PM EST</small>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Contact Form & Map -->
+  <section class="contact-form-map">
+    <div class="container">
+      <div class="form-map-grid">
+        <!-- Quick Contact Form -->
+        <div class="form-section">
+          <h2>Send Us a Quick Message</h2>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="contactName">Full Name *</label>
+              <input type="text" id="contactName" name="contactName" required>
+              <span class="error-message" id="contactNameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail">Email Address *</label>
+              <input type="email" id="contactEmail" name="contactEmail" required>
+              <span class="error-message" id="contactEmailError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject">Subject *</label>
+              <select id="contactSubject" name="contactSubject" required>
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="product">Product Question</option>
+                <option value="order">Order Support</option>
+                <option value="wholesale">Wholesale Inquiry</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Your Message *</label>
+              <textarea id="contactMessage" name="contactMessage" rows="6" placeholder="Tell us how we can help you..." required></textarea>
+              <span class="error-message" id="contactMessageError"></span>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Map & Location Info -->
+        <div class="map-section">
+          <h2>Our Location</h2>
+          <div class="map-container">
+            <div class="video-container">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.5891956154433!2d-82.8721!3d40.0205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88386fbf90f8c6f7%3A0xabcdef123456789!2s1352%20Underwood%20Farms%20Blvd%2C%20Gahanna%2C%20OH%2043230!5e0!3m2!1sfr!2sus!4v1695492812345!5m2!1sfr!2sus" 
+                width="100%" 
+                height="300" 
+                style="border:0; border-radius: 10px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+            
+            <div class="store-info">
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <strong>Store Address</strong>
+                  <p>1352 Underwood Farms Blvd<br>Gahanna, OH 43230</p>
+                </div>
+              </div>
+              
+              <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <strong>Business Hours</strong>
+                  <p>Monday - Friday: 9AM - 6PM<br>Saturday: 10AM - 4PM<br>Sunday: Closed</p>
+                </div>
+              </div>
+              
+              <div class="info-item">
+                <i class="fas fa-info-circle"></i>
+                <div>
+                  <strong>Quick Info</strong>
+                  <p>Free parking available<br>Wheelchair accessible<br>Family friendly</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>What's your return policy? <i class="fas fa-chevron-down"></i></h3>
+          <p>We offer 30-day returns for all unused items in original packaging. Full refund or exchange available.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Do you offer international shipping? <i class="fas fa-chevron-down"></i></h3>
+          <p>Yes! We ship worldwide. Shipping costs and delivery times vary by location.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can I customize jewelry? <i class="fas fa-chevron-down"></i></h3>
+          <p>Absolutely! We offer customization services. Contact us for personalized pieces.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>How do I track my order? <i class="fas fa-chevron-down"></i></h3>
+          <p>Tracking information is sent via email once your order ships.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Confirmation Message -->
+  <div id="contactConfirmation" class="confirmation-message" style="display: none;">
+    <div class="confirmation-content">
+      <div class="confirmation-icon">💎</div>
+      <h2>Message Sent Successfully!</h2>
+      <p>Thank you for contacting Velvet Gleam. We'll get back to you within 2 hours.</p>
+      <button onclick="closeContactConfirmation()" class="confirmation-btn">Continue Shopping</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Brand Section -->
+    <div class="footer-brand">
+      <h3>💎 Velvet Gleam</h3>
+      <p>Crafting elegance, empowering stories. Your premier destination for exquisite accessories that make you shine.</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/its_velvet_gleam?utm_source=qr&igsh=bmV0dzh5c3l6Y2hp"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/16d2HE6nZh/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.tiktok.com/@purple_nely?_r=1&_t=ZS-91XTNiiCC2y"><i class="fab fa-tiktok"></i></a>
+        <a href="Check out my Pinterest profile! https://pin.it/7CiTH2vAM"><i class="fab fa-pinterest"></i></a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="Homepage.html">Home</a></li>
+        <li><a href="Product.html">Products</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Customer Service -->
+    <div class="footer-links">
+      <h4>Customer Service</h4>
+      <ul>
+        <li><a href="Enquiry.html">Help Center</a></li>
+        <li><a href="Enquiry.html">Shipping Info</a></li>
+        <li><a href="Enquiry.html">Returns</a></li>
+        <li><a href="Enquiry.html">Size Guide</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h4>Contact Info</h4>
+      <ul>
+        <li>📧 velvetgleam2025@gmail.com</li>
+        <li>📱 +27 60 205 7704</li>
+        <li>📍 Gahanna, Ohio 43230</li>
+        <li>🕒 Mon-Fri: 9AM-6PM EST</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Velvet Gleam. All rights reserved. | Crafted with 💖 for fashion lovers</p>
+  </div>
+</footer>
+</body>
+</html>

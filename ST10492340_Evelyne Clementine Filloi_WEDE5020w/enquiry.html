@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvet Gleam - Enquiry</title>
+ <link rel="stylesheet" href="./css/styles.css">
+ <!-- Dans le <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="js/script.js"></script>
+
+</head>
+<body>
+
+  
+    
+  <header>
+    <div class="logo">
+      <img src="images/velvet_gleam.jpg" alt="Velvet Gleam Logo" width="80">
+    </div>
+    <nav>
+      <a href="Homepage.html">🏠 Home</a>
+      <a href="Product.html">🛍 Products</a>
+      <a href="About.html">ℹ️ About</a>
+      <a href="Enquiry.html">📩 Enquiry</a>
+      <a href="Contact.html">📞 Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- CONTACT INFO -->
+    <div class="welcome-enquiry">
+      <h1>✨WELCOME TO VELVET_GLEAM ✨</h1>
+      <p>PLEASE ASK ANY QUESTION!!!!!!!!</p>
+    </div>
+
+    <!-- Enquiry Form -->
+    <section class="enquiry-section">
+      <form id="enquiryForm" onsubmit="return validateEnquiryForm()">
+        <div class="form-group">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required>
+          <span class="error-message" id="nameError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <span class="error-message" id="emailError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <select id="subject" name="subject" required>
+            <option value="">Select a subject</option>
+            <option value="product-info">Product Information</option>
+            <option value="shipping">Shipping Questions</option>
+            <option value="returns">Returns & Exchanges</option>
+            <option value="wholesale">Wholesale Inquiry</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="6" placeholder="Please type your message here..." required></textarea>
+          <span class="error-message" id="messageError"></span>
+        </div>
+
+        <div class="form-buttons">
+          <button type="submit" class="submit-btn">📩 Send Message</button>
+          <button type="button" class="info-btn" onclick="window.location.href='Contact.html'">
+            ℹ️ More Information
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Confirmation Message (hidden by default) -->
+    <div id="confirmationMessage" class="confirmation-message" style="display: none;">
+      <div class="confirmation-content">
+        <div class="confirmation-icon">✅</div>
+        <h2>Thank You for Your Message!</h2>
+        <p>We have received your enquiry and will get back to you within 24 hours.</p>
+        <button onclick="closeConfirmation()" class="confirmation-btn">Close</button>
+      </div>
+    </div>
+  </main>
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-container">
+   <!-- Brand Section -->
+    <div class="footer-brand">
+      <h3>💎 Velvet Gleam</h3>
+      <p>Crafting elegance, empowering stories. Your premier destination for exquisite accessories that make you shine.</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/its_velvet_gleam?utm_source=qr&igsh=bmV0dzh5c3l6Y2hp"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/16d2HE6nZh/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.tiktok.com/@purple_nely?_r=1&_t=ZS-91XTNiiCC2y"><i class="fab fa-tiktok"></i></a>
+        <a href="Check out my Pinterest profile! https://pin.it/7CiTH2vAM"><i class="fab fa-pinterest"></i></a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="Homepage.html">Home</a></li>
+        <li><a href="Product.html">Products</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Customer Service -->
+    <div class="footer-links">
+      <h4>Customer Service</h4>
+      <ul>
+        <li><a href="Enquiry.html">Help Center</a></li>
+        <li><a href="Enquiry.html">Shipping Info</a></li>
+        <li><a href="Enquiry.html">Returns</a></li>
+        <li><a href="Enquiry.html">Size Guide</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h4>Contact Info</h4>
+      <ul>
+        <li>📧 velvetgleam2025@gmail.com</li>
+        <li>📱 +27 60 205 7704</li>
+        <li>📍 Gahanna, Ohio 43230</li>
+        <li>🕒 Mon-Fri: 9AM-6PM EST</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Velvet Gleam. All rights reserved. | Crafted with 💖 for fashion lovers</p>
+  </div>
+</footer>
+
+</body>
+</html>

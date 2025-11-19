@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvet Gleam - Products</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/script.js"></script>
+  <!-- Dans le <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+
+
+ 
+  <header>
+  
+    <div class="logo">
+   
+
+    <img src="images/velvet_gleam.jpg" alt="Velvet Gleam Logo" width="80">
+  </div>
+
+
+   <nav>
+     <a href="Homepage.html">🏠 Home</a>
+  <a href="Product.html">🛍 Products</a>
+  <a href="About.html">ℹ️ About</a>
+  <a href="Enquiry.html">📩 Enquiry</a>
+  <a href="Contact.html">📞 Contact</a>
+ 
+  </nav>
+
+</header>
+
+  <!-- PRODUCTS SECTION -->
+  <main>
+      <section id="product-section">
+ <h1>🛍️ Our Products</h1>
+  <p>Discover our stainless steel jewelry collection, carefully designed to add elegance to your everyday style.</p>
+
+    <!-- Search Section -->
+     <div class="search-container">
+      <div class="search-box">
+      <input type="text" id="search" onkeyup="searchProducts()" placeholder="Search for products...">
+      <button onclick="searchProducts()">🔍</button >
+</div>
+<div id="search-results" class="search-results"></div>
+<div class="basket-link">
+ <a href="#" onclick="showBasket()"> <p> Please click for the checkout🛒 (<span id="cart-count">0</span>)</p> </a>
+ </div>
+     </div>
+
+    <!-- 🛒 Product grid -->
+     
+   <div class="product-list" id="product-list">
+
+
+    <div class="product">
+      <img src="images/Bracelet lega.jpg" alt="Bracelet lega">
+      <p><strong>Bracelet lega</strong></p>
+      <p>$25</p>
+      <button onclick="addToCart('Bracelet Élégant', 25)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/Bracelet Theor.jpg" alt="Bracelet Theor">
+      <p><strong>Bracelet Theor</strong></p>
+      <p>$19</p>
+      <button onclick="addToCart('Golden Bracelet',19)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/Bracelet Gret.jpg" alt="Bracelet Gret">
+      <p><strong>Bracelet Gret</strong></p>
+      <p>$15</p>
+      <button onclick="addToCart('Minimal Bracelet',15)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/Multiple Ring.jpg" alt="Multiple Ring">
+      <p><strong>Multiple Ring</strong></p>
+      <p>$22</p>
+      <button onclick="addToCart('Chic Ring',22)">Add to Cart</button>
+    </div>
+     <div class="product">
+      <img src="images/Multiple ring Gold.jpg" alt="Multiple ring Gold">
+      <p><strong>Multiple ring Gold</strong></p>
+      <p>$25</p>
+      <button onclick="addToCart('Elegant Bracelet',25)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/BraceletSlim.jpg" alt="BraceletSlim">
+      <p><strong>BraceletSlim</strong></p>
+      <p>$19</p>
+      <button onclick="addToCart('Golden Bracelet',19)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/Bracelet Tiktok.jpg" alt="Bracelet Tiktok">
+      <p><strong>Bracelet Tiktok</strong></p>
+      <p>$15</p>
+      <button onclick="addToCart('Minimal Bracelet',15)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/3 Bracelet together.jpg" alt="3 Bracelet together">
+      <p><strong>3 Bracelet together</strong></p>
+      <p>$22</p>
+      <button onclick="addToCart('Chic Ring',22)">Add to Cart</button>
+    </div>
+     <div class="product">
+      <img src="images/Neclackes.jpg" alt="Neclackes.jpg">
+      <p><strong>Neclackes</strong></p>
+      <p>$25</p>
+      <button onclick="addToCart('Elegant Bracelet',25)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/Bracelet 1.jpg" alt="Bracelet 1">
+      <p><strong>Bracelet Gold</strong></p>
+      <p>$19</p>
+      <button onclick="addToCart('Golden Bracelet',19)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/Bracelet 2.jpg" alt="Bracelet 2">
+      <p><strong>Bracelet Mix</strong></p>
+      <p>$15</p>
+      <button onclick="addToCart('Minimal Bracelet',15)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/Bracelet 3.jpg" alt="Bracelet 3">
+      <p><strong>Bracelet with Cross</strong></p>
+      <p>$22</p>
+      <button onclick="addToCart('Chic Ring',22)">Add to Cart</button>
+    </div>
+     <div class="product">
+      <img src="images/Earings.jpg" alt="Earings">
+      <p><strong>Earings</strong></p>
+      <p>$25</p>
+      <button onclick="addToCart('Elegant Bracelet',25)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/Neclackes 1.jpg" alt="Neclackes 1">
+      <p><strong>Neclackes 1</strong></p>
+      <p>$15</p>
+      <button onclick="addToCart('Minimal Bracelet',15)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/Bracelet 4.jpg" alt="Bracelet 4">
+      <p><strong>Bracelet 4</strong></p>
+      <p>$22</p>
+      <button onclick="addToCart('Chic Ring',22)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/Watch.jpg" alt="Watch">
+      <p><strong>Watch</strong></p>
+      <p>$22</p>
+      <button onclick="addToCart('Chic Ring',22)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/Ring1.jpg" alt="Ring1">
+      <p><strong>Chic Ring</strong></p>
+      <p>$22</p>
+      <button onclick="addToCart('Chic Ring',22)">Add to Cart</button>
+    </div>
+   </div>
+
+</section>
+ 
+<!-- ✅ 🛒 Basket Section (cachée) -->
+  <section id="basket-section" style="display:none;">
+    <h2>🛒 Your Basket</h2>
+    <div id="basket-container"></div>
+    <p>Total: $<span id="basket-total">0</span></p>
+    <button onclick="showProducts()">⬅ Back to Products</button>
+    <button onclick="showCheckout()">💳 Proceed to Checkout</button>
+  </section>
+
+  <!-- ✅ 💳 Checkout Section (cachée) -->
+  <section id="checkout-section" style="display:none;">
+    <h2>💳 Checkout</h2>
+
+    <form id="payment-form">
+      <label>Full Name:</label>
+      <input type="text" id="name" required>
+
+      <label>Email:</label>
+      <input type="email" id="email" required>
+
+      <label>Address:</label>
+      <input type="text" id="address" required>
+
+      <label>Card Number:</label>
+      <input type="text" id="card" maxlength="16" placeholder="1234 5678 9012 3456" required>
+
+      <label>Expiry Date:</label>
+      <input type="month" id="expiry" required>
+
+      <label>CVV:</label>
+      <input type="text" id="cvv" maxlength="3" required>
+
+<!-- ✅ Confirmation Message (cachée) -->
+<section id="confirmation-section" style="display:none;">
+  <div class="confirmation-container">
+    <div class="confirmation-icon">🎉</div>
+    <h2>Thank You for Your Purchase!</h2>
+    <p>Your order has been confirmed and will be shipped within 3-5 business days.</p>
+    <div class="order-details">
+      <p><strong>Order Number:</strong> <span id="order-number">VG</span></p>
+      <p><strong>Estimated Delivery:</strong> <span id="delivery-date"></span></p>
+    </div>
+    <button onclick="backToHome()" class="confirmation-btn">🏠 Back to Home</button>
+    <button onclick="showProducts()" class="confirmation-btn">🛍️ Continue Shopping</button>
+  </div>
+</section>
+
+      <button type="submit">✅ Confirm Purchase</button>
+      <button type="button" onclick="showBasket()">⬅ Back to Basket</button>
+    </form>
+  </section>
+
+</main>
+
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Brand Section -->
+    <div class="footer-brand">
+      <h3>💎 Velvet Gleam</h3>
+      <p>Crafting elegance, empowering stories. Your premier destination for exquisite accessories that make you shine.</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/its_velvet_gleam?utm_source=qr&igsh=bmV0dzh5c3l6Y2hp"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/16d2HE6nZh/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.tiktok.com/@purple_nely?_r=1&_t=ZS-91XTNiiCC2y"><i class="fab fa-tiktok"></i></a>
+        <a href="Check out my Pinterest profile! https://pin.it/7CiTH2vAM"><i class="fab fa-pinterest"></i></a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="Homepage.html">Home</a></li>
+        <li><a href="Product.html">Products</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Customer Service -->
+    <div class="footer-links">
+      <h4>Customer Service</h4>
+      <ul>
+        <li><a href="Enquiry.html">Help Center</a></li>
+        <li><a href="Enquiry.html">Shipping Info</a></li>
+        <li><a href="Enquiry.html">Returns</a></li>
+        <li><a href="Enquiry.html">Size Guide</a></li>
+      </ul>
+    </div>
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h4>Contact Info</h4>
+      <ul>
+        <li>📧 velvetgleam2025@gmail.com</li>
+        <li>📱 +27 60 205 7704</li>
+        <li>📍 Gahanna, Ohio 43230</li>
+        <li>🕒 Mon-Fri: 9AM-6PM EST</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Velvet Gleam. All rights reserved. | Crafted with 💖 for fashion lovers</p>
+  </div>
+</footer>
+</body>
+</html>
